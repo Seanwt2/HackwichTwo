@@ -25,15 +25,6 @@
                                     <action selector="pressMeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EsW-GJ-3aD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgp-vZ-gQL">
-                                <rect key="frame" x="139" y="409" width="115" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Segue Push"/>
-                                <connections>
-                                    <segue destination="DSE-2b-7IJ" kind="show" id="vad-6z-SBi"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HEa-Rq-eWV">
                                 <rect key="frame" x="145" y="599" width="102" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,6 +32,15 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="IBAactionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ZY-5i-ZQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="pgp-vZ-gQL">
+                                <rect key="frame" x="139" y="408" width="115" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Segue Push"/>
+                                <connections>
+                                    <segue destination="DSE-2b-7IJ" kind="show" id="vad-6z-SBi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,13 +52,31 @@
             </objects>
             <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="FuS-l9-8qa">
             <objects>
-                <viewController id="DSE-2b-7IJ" sceneMemberID="viewController">
+                <viewController id="DSE-2b-7IJ" customClass="secondViewController" customModule="HackwichTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jtu-Qk-rDB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aPn-Ec-YQo">
+                                <rect key="frame" x="175" y="410" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="iQo-RN-aqu">
+                                <rect key="frame" x="133" y="489" width="129" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change Color"/>
+                                <connections>
+                                    <action selector="ChangeColorButtonPressed:" destination="DSE-2b-7IJ" eventType="touchUpInside" id="8Jc-Rk-gGt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Pl3-JD-6zl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
